@@ -1,0 +1,46 @@
+<div *ngIf="list">
+<div *ngIf="drama$ | async">
+
+  <br>
+  <div class="container">
+    <div class="cellphone-container">
+        <div class="movie">
+          <div class="movie-img"><img width=50% img [src]="(drama$ | async)?.src" alt=""></div>
+          <div class="text-movie-cont">
+            <div class="mr-grid">
+              <div class="col1">
+                <h1>{{(drama$ | async)?.name}}</h1>
+                <ul class="movie-gen">
+                  <li>PG-13  /</li>
+                  <li>{{(drama$ | async)?.episodes}} | {{(drama$ | async)?.year}} /</li>
+                  <li>{{(drama$ | async)?.genres}}</li>
+                </ul>
+              </div>
+            </div>
+            <div class="mr-grid summary-row">
+              <div class="col2">
+                <h5>SUMMARY</h5>
+              </div>
+              <div class="col2">
+              </div>
+            </div>
+            <div class="mr-grid">
+              <div class="col1">
+                <p class="movie-description">{{(drama$ | async)?.sinopsis}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="mr-grid actors-row">
+              <div class="col1">
+                <p class="movie-actors">{{(drama$ | async)?.cast}}</p>
+              </div>
+            </div>
+            <div class="mr-grid action-row">
+              <div class="col2"><div class="watch-btn"><button (click)="add()"><h3>Add to list</h3></button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

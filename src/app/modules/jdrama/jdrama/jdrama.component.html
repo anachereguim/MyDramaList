@@ -1,0 +1,21 @@
+<h1>Japanese dramas</h1>
+<body class="grid">
+
+<div class="cards" *ngFor="let drama of drama">
+
+<div class="card" >
+  <img class="img1"  img [src]="drama.src" alt="">
+  <img class="img2"   img [src]="drama.src" alt="">
+  <button (click)="selecionarDrama(drama)">
+    <div class="img1"></div>
+    <div class="img2"></div>
+    <div class="title">{{drama.name}}</div>
+    <div class="text">{{drama.sinopsis}}</div>
+    <a href="#"><div class="catagory">{{drama.episodes}}  <i   class="fas fa-film"></i></div></a>
+    <a href="#"><div class="views">{{drama.year}}  <i class="far fa-eye"></i> </div></a>
+  </button>
+    <br>
+</div>
+
+</div>
+</body>

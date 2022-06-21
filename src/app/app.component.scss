@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat:wght@500&family=Syne+Mono&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #eed1e9;
+
+
+}
+
+li, a, button{
+  font-family: 'Syne Mono', monospace;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 16px 5%;
+  -webkit-box-shadow: 0px 0px 9px 3px rgb(224, 136, 195);
+  -moz-box-shadow: 0px 0px 9px 3px rgb(224, 136, 195);
+  box-shadow: 0px 0px 9px 3px rgb(224, 136, 195);
+}
+
+.logo {
+  cursor:pointer;
+  height: 50px;
+
+}
+
+
+.nav__links {
+  list-style: none;
+}
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #a10c7c
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgb(223, 52, 166);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  -webkit-box-shadow: 0px 0px 9px 3px rgba(146, 11, 124, 0.25);
+  -moz-box-shadow: 0px 0px 9px 3px rgba(146, 11, 124, 0.25);
+  box-shadow: 0px 0px 9px 3px rgba(146, 11, 124, 0.25);
+
+}
+
+button:hover {
+  background-color: rgba(122, 7, 82, 0.8);
+}
+

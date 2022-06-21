@@ -1,0 +1,16 @@
+<br><br>
+<p-carousel [value]="drama" styleClass="custom-carousel" [numVisible]="5" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+  <ng-template let-drama pTemplate="drama">
+      <div class="drama">
+          <div class="drama-content">
+              <div class="mb-3">
+                <button (click)="selecionarDrama(drama)">
+                  <img [src]="drama.src" style="float: left; width:  280px; height: 550px; object-fit: cover; display: block;" [alt]="drama.name" class="drama-image" />
+                </button>
+              </div>
+
+          </div>
+      </div>
+  </ng-template>
+</p-carousel>
+
